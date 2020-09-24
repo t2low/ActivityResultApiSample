@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         getResultButton.setOnClickListener {
-            val intent = StringActivity.createIntent(this)
+            val intent = IntActivity.createIntent(this)
             getActivityResult.launch(intent)
         }
     }
