@@ -22,9 +22,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/get_activity_result"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/getStringButton"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/selectButton" />
+
+    <Button
+        android:id="@+id/getStringButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_string"
+        app:layout_constraintBottom_toTopOf="@id/getIntButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/getResultButton" />
+
+    <Button
+        android:id="@+id/getIntButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_int"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/getStringButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,6 +22,14 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private val getString = registerForActivityResult(StringActivity.GetString()) { result: String? ->
+        Toast.makeText(this, result ?: "Error", Toast.LENGTH_SHORT).show()
+    }
+
+    private val getInt = registerForActivityResult(IntActivity.GetInt()) { result: Int ->
+        Toast.makeText(this, "$result", Toast.LENGTH_SHORT).show()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -33,6 +41,14 @@ class MainActivity : AppCompatActivity() {
         getResultButton.setOnClickListener {
             val intent = IntActivity.createIntent(this)
             getActivityResult.launch(intent)
+        }
+
+        getStringButton.setOnClickListener {
+            getString.launch(Unit)
+        }
+
+        getIntButton.setOnClickListener {
+            getInt.launch(Unit)
         }
     }
 }

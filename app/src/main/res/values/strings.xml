@@ -2,4 +2,6 @@
     <string name="app_name">ActivityResultApiSample</string>
     <string name="get_content">Get Content</string>
     <string name="get_activity_result">Get Activity Result</string>
+    <string name="get_string">Get String</string>
+    <string name="get_int">Get Int</string>
 </resources>
