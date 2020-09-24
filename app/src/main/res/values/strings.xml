@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ActivityResultApiSample</string>
-    <string name="get_content">GetContent</string>
+    <string name="get_content">Get Content</string>
+    <string name="get_activity_result">Get Activity Result</string>
 </resources>
